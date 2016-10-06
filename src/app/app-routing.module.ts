@@ -1,11 +1,14 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { AppComponent } from './app.component';
+import { PatientDashboardComponent } from './patient-dashboard/patient-dashboard.component';
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
-})
-export class AngularSkeletonRoutingModule { }
+const routes: Routes = [ 
+  {
+    path : '',
+    component : PatientDashboardComponent
+  }
+];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

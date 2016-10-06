@@ -1,0 +1,23 @@
+<div class="panel panel-primary" *ngIf="patient">
+  <div class="panel-body container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>{{ patient.fullName }}</p>
+        <p>{{ patient.age }}</p>
+        <p>{{ patient.phoneNumber }} <span *ngIf="patient.phoneNumber === null">Not Available </span></p>
+        <p>{{ patient.healthCenter }}</p>
+      </div>
+      <div class="col-sm-6">
+        <p>AMRS UID: {{ patient.ampathMrsUId }}<span></span>
+          <span *ngIf="patient. ampathMrsUId === null">Not Available</span></p>
+        <p>AMRS MRN: {{ patient.mrsMrn }}<span></span>
+          <span *ngIf="patient.mrsMrn === null">Not Available</span></p>
+        <p>CCC: {{ patient.cCC }}<span></span>
+          <span *ngIf="patient.cCC === null">Not Available</span></p>
+        <p>National ID: {{ patient.kenyaNationalId }}<span></span>
+          <span *ngIf="patient.kenyaNationalId === null">Not Available</span></p>
+      </div>
+    </div>
+	</div>
+</div>
+
