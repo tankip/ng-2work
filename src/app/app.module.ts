@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {PanelModule} from 'primeng/primeng';
 
 import { routing } from './app-routing.module';
 
@@ -19,7 +20,8 @@ import { PatientInfoBannerComponent } from './patient-info-banner/patient-info-b
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing, 
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
