@@ -9,7 +9,7 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
-    "release": "release-it"
+    "release": "release-it && node snapshot.js"
   },
   "private": true,
   "dependencies": {
